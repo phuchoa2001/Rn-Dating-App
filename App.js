@@ -1,10 +1,12 @@
 import React from 'react'
-import { NavigationContainer } from '@react-navigation/native';
 import { NativeWindStyleSheet } from "nativewind";
-import { Provider } from "react-redux";
-import store from './src/redux/store';
+
+import { NavigationContainer } from '@react-navigation/native';
 import StackNavigator from './StackNavigator';
 import { MD3LightTheme as DefaultTheme, Provider as PaperProvider } from 'react-native-paper';
+
+import { Provider } from "react-redux";
+import store from './src/redux/store';
 
 NativeWindStyleSheet.setOutput({
   default: "native",
